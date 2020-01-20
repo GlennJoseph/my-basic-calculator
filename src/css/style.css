@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../resources/fonts/Poppins-Regular.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:focus{
+    outline: none;
+}
+
+* {
+    font-size: 25px;
+    font-family: Poppins;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    margin: auto;
+    background-color: #313131;
+}
+
+.outputWrapper {
+    height: 250px;
+    color: white;
+    padding: 2.5% 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.itemsWrapper, .answerWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.itemsWrapper{
+    font-size: 30px !important;
+    height: 30%;
+}
+
+.answerWrapper {
+    font-size: 55px !important;
+    font-weight: 800;
+    height: 70%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calcBtn, .operatorBtn, #cancelBtn {
+    width: 100%;
+    max-width: 25%;
+    margin: 2px;
+    height: 96px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.calcBtn:hover, .operatorBtn:hover, #cancelBtn:hover{
+    transform: scale(1.05);
+}
+
+.calcBtn:hover {
+    background-color: #dedede;
+    color: #313131;
+}
+
+.operatorBtn:hover {
+    background-color: #FFC326;
+    color: #313131;
+}
+
+.operatorBtn {
+    color: #FFC326;
+}
+
+#cancelBtn:hover {
+    
+    background-color: #FF3333;
+    color: #dedede;
+}
+
+#cancelBtn {
+    color: #FF3333;
+}
