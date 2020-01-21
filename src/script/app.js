@@ -21,6 +21,13 @@ let clicked;
 
 function calcOn(){
     calcBtn.click(function(e){
+        if (answerWrapper[0].innerText){
+            itemsWrapper.empty();
+            answerWrapper.empty();
+            operatorOn();
+            equalsOn();
+        }
+        
         clicked = e.target.innerText;
         itemsWrapper.append(clicked);
     });    
@@ -77,7 +84,10 @@ function equalsOn(){
     equalsBtn.on('click', function(){
         if (operatorClicked)
             findOperands();
-        
+
+        if (!operandTwo)
+            return;
+
         if (operatorClicked == '+')
             answer = operandOne + operandTwo;
         
