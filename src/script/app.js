@@ -27,7 +27,7 @@ function calcOn(){
 }
 
 
-//When operators are clicked
+//Display the operator used
 let operatorClicked;
 let operandOne, operandTwo;
 
@@ -59,7 +59,7 @@ function operatorAgain(){
 }
 
 
-//Separate operands
+//Set value on the operands
 function findOperands(){
     let operatorRegex = /[−+/x%]/;
     let match = itemsWrapper[0].innerText.match(operatorRegex);
