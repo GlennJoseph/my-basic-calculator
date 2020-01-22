@@ -84,7 +84,7 @@ function equalsOn(){
     equalsBtn.on('click', function(){
         if (operatorClicked)
             findOperands();
-
+        
         if (!operandTwo)
             return;
 
